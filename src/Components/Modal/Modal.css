@@ -1,0 +1,115 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    position: relative;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #8f1717;
+    background-color: #fff;;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .modal-content h2 {
+    margin: 0 0 20px 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    color: #252C58;
+  }
+  
+  .modal-content form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal-content form .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .modal-content form label {
+    width: 40%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #727272;
+  }
+  
+  .modal-content form input,
+  .modal-content form select,
+  .modal-content form textarea {
+    width: 60%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+  }
+  
+  .modal-content form select {
+    box-sizing: border-box;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1.5px solid #E3E3E3;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 17px;
+    color: #727272;
+    padding: 4px;
+  }
+  
+  .modal-content form textarea {
+    height: 60px; /* Adjust the height as needed */
+  }
+  
+  .modal-content form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 30%;
+  }
+  
+  .modal-content form button:hover {
+    background: #0056b3;
+  }
+  @media (max-width: 480px){
+    .modal-overlay{
+        padding: 30px;
+    }
+  }
